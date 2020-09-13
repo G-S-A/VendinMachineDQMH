@@ -19,6 +19,10 @@
 				<Item Name="Hide Panel Argument--cluster.ctl" Type="VI" URL="../Hide Panel Argument--cluster.ctl"/>
 				<Item Name="Show Diagram Argument--cluster.ctl" Type="VI" URL="../Show Diagram Argument--cluster.ctl"/>
 				<Item Name="SET CONFIGURATIO Argument--cluster.ctl" Type="VI" URL="../SET CONFIGURATIO Argument--cluster.ctl"/>
+				<Item Name="UPDATE DB TO MONEY LIST Argument--cluster.ctl" Type="VI" URL="../UPDATE DB TO MONEY LIST Argument--cluster.ctl"/>
+				<Item Name="SAVE IN DB Argument--cluster.ctl" Type="VI" URL="../SAVE IN DB Argument--cluster.ctl"/>
+				<Item Name="SAVE PRODUCT IN DATABASE Argument--cluster.ctl" Type="VI" URL="../SAVE PRODUCT IN DATABASE Argument--cluster.ctl"/>
+				<Item Name="UPDATE DB TO PRODUCT LIST Argument--cluster.ctl" Type="VI" URL="../UPDATE DB TO PRODUCT LIST Argument--cluster.ctl"/>
 			</Item>
 			<Item Name="Broadcast" Type="Folder">
 				<Item Name="Did Init Argument--cluster.ctl" Type="VI" URL="../Did Init Argument--cluster.ctl"/>
@@ -33,6 +37,10 @@
 			<Item Name="Get Module Execution Status.vi" Type="VI" URL="../Get Module Execution Status.vi"/>
 			<Item Name="Show Diagram.vi" Type="VI" URL="../Show Diagram.vi"/>
 			<Item Name="SET CONFIGURATIO.vi" Type="VI" URL="../SET CONFIGURATIO.vi"/>
+			<Item Name="UPDATE DB TO MONEY LIST.vi" Type="VI" URL="../UPDATE DB TO MONEY LIST.vi"/>
+			<Item Name="SAVE IN DB.vi" Type="VI" URL="../SAVE IN DB.vi"/>
+			<Item Name="SAVE PRODUCT IN DATABASE.vi" Type="VI" URL="../SAVE PRODUCT IN DATABASE.vi"/>
+			<Item Name="UPDATE DB TO PRODUCT LIST.vi" Type="VI" URL="../UPDATE DB TO PRODUCT LIST.vi"/>
 		</Item>
 		<Item Name="Start Module.vi" Type="VI" URL="../Start Module.vi"/>
 		<Item Name="Synchronize Module Events.vi" Type="VI" URL="../Synchronize Module Events.vi"/>
@@ -84,4 +92,7 @@
 	<Item Name="Main.vi" Type="VI" URL="../Main.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
+	<Item Name="DB_CONFIGURATION.vi" Type="VI" URL="../../../Tools VIs/DB_CONFIGURATION.vi"/>
+	<Item Name="DB_GET TABLE.vi" Type="VI" URL="../../../Tools VIs/DB_GET TABLE.vi"/>
+	<Item Name="DB_GET PRODUCT TABLE.vi" Type="VI" URL="../../../Tools VIs/DB_GET PRODUCT TABLE.vi"/>
 </Library>
