@@ -1,0 +1,1034 @@
+= Documentation Vending Machine
+Gerardo Sánchez
+:toc: 
+:imagesdir: Images
+
+== Code component description
+
+=== Dqmh modules
+
+DQMH modules descriptions and links
+
+==== COINS.lvlib
+
+Module type: Singleton
+
+THIS LIBRARY IS FOR COINS MODULE
+
+.Requests Link
+|===
+|Request Name|Callers
+
+|<<COINS.lvlib:Show Panel.vi>>
+|Test COINS API.vi
+
+|<<COINS.lvlib:Hide Panel.vi>>
+|Test COINS API.vi
+
+|<<COINS.lvlib:Stop Module.vi>>
+|COINS.lvlib:Handle Exit.vi +
+Tester UI.lvlib:Main.vi +
+Test COINS API.vi
+
+|<<COINS.lvlib:Get Module Execution Status.vi>>
+|COINS.lvlib:Start Module.vi +
+COINS.lvlib:Obtain Broadcast Events for Registration.vi
+
+|<<COINS.lvlib:Show Diagram.vi>>
+|Test COINS API.vi
+
+|<<COINS.lvlib:SET COINS.vi>>
+|CONFIGURATION.lvlib:Main.vi +
+Test COINS API.vi
+
+|<<COINS.lvlib:UPDATE COIN.vi>>
+|COINS.lvlib:Main.vi +
+CONFIGURATION.lvlib:Main.vi +
+Test COINS API.vi
+
+|<<COINS.lvlib:UPDATE CREDIT.vi>>
+|Test COINS API.vi
+
+|<<COINS.lvlib:COMPARE CREDIT VS PRICE.vi>>
+|Products.lvlib:Main.vi +
+Test COINS API.vi
+|===
+
+.Broadcast Registration
+|===
+|Broadcast Name|Listener
+
+|<<COINS.lvlib:Module Did Init.vi>>
+|Test COINS API.vi
+
+|<<COINS.lvlib:Status Updated.vi>>
+|Test COINS API.vi
+
+|<<COINS.lvlib:Error Reported.vi>>
+|Test COINS API.vi
+
+|<<COINS.lvlib:Module Did Stop.vi>>
+|Test COINS API.vi
+
+|<<COINS.lvlib:Update Module Execution Status.vi>>
+|Test COINS API.vi
+|===
+
+
+==== CONFIGURATION.lvlib
+
+Module type: Singleton
+
+THIS LIBRARY IS FOR CONFIGURATION MODULE
+
+.Requests Link
+|===
+|Request Name|Callers
+
+|<<CONFIGURATION.lvlib:Show Panel.vi>>
+|Tester UI.lvlib:Main.vi +
+Test CONFIGURATION API.vi
+
+|<<CONFIGURATION.lvlib:Hide Panel.vi>>
+|Test CONFIGURATION API.vi
+
+|<<CONFIGURATION.lvlib:Stop Module.vi>>
+|CONFIGURATION.lvlib:Handle Exit.vi +
+Test CONFIGURATION API.vi
+
+|<<CONFIGURATION.lvlib:Get Module Execution Status.vi>>
+|CONFIGURATION.lvlib:Start Module.vi +
+CONFIGURATION.lvlib:Obtain Broadcast Events for Registration.vi
+
+|<<CONFIGURATION.lvlib:Show Diagram.vi>>
+|Test CONFIGURATION API.vi
+
+|<<CONFIGURATION.lvlib:SET CONFIGURATIO.vi>>
+|Test CONFIGURATION API.vi
+
+|<<CONFIGURATION.lvlib:UPDATE DB TO MONEY LIST.vi>>
+|CONFIGURATION.lvlib:Main.vi +
+Test CONFIGURATION API.vi
+
+|<<CONFIGURATION.lvlib:SAVE IN DB.vi>>
+|Test CONFIGURATION API.vi
+
+|<<CONFIGURATION.lvlib:SAVE PRODUCT IN DATABASE.vi>>
+|Test CONFIGURATION API.vi
+
+|<<CONFIGURATION.lvlib:UPDATE DB TO PRODUCT LIST.vi>>
+|CONFIGURATION.lvlib:Main.vi +
+Test CONFIGURATION API.vi
+|===
+
+.Broadcast Registration
+|===
+|Broadcast Name|Listener
+
+|<<CONFIGURATION.lvlib:Module Did Init.vi>>
+|Test CONFIGURATION API.vi
+
+|<<CONFIGURATION.lvlib:Status Updated.vi>>
+|Test CONFIGURATION API.vi
+
+|<<CONFIGURATION.lvlib:Error Reported.vi>>
+|Test CONFIGURATION API.vi
+
+|<<CONFIGURATION.lvlib:Module Did Stop.vi>>
+|Test CONFIGURATION API.vi
+
+|<<CONFIGURATION.lvlib:Update Module Execution Status.vi>>
+|Test CONFIGURATION API.vi
+|===
+
+
+==== MESSAGES.lvlib
+
+Module type: Singleton
+
+THIS LIBRARY IS FOR MESSAGES MODULE
+
+.Requests Link
+|===
+|Request Name|Callers
+
+|<<MESSAGES.lvlib:Show Panel.vi>>
+|Test MESSAGES API.vi
+
+|<<MESSAGES.lvlib:Hide Panel.vi>>
+|Test MESSAGES API.vi
+
+|<<MESSAGES.lvlib:Stop Module.vi>>
+|MESSAGES.lvlib:Handle Exit.vi +
+Tester UI.lvlib:Main.vi +
+Test MESSAGES API.vi
+
+|<<MESSAGES.lvlib:Get Module Execution Status.vi>>
+|MESSAGES.lvlib:Start Module.vi +
+MESSAGES.lvlib:Obtain Broadcast Events for Registration.vi
+
+|<<MESSAGES.lvlib:Show Diagram.vi>>
+|Test MESSAGES API.vi
+
+|<<MESSAGES.lvlib:SET MESSAGE.vi>>
+|COINS.lvlib:Main.vi +
+CONFIGURATION.lvlib:Main.vi +
+MESSAGES.lvlib:Main.vi +
+Products.lvlib:Main.vi +
+Test MESSAGES API.vi
+|===
+
+.Broadcast Registration
+|===
+|Broadcast Name|Listener
+
+|<<MESSAGES.lvlib:Module Did Init.vi>>
+|Test MESSAGES API.vi
+
+|<<MESSAGES.lvlib:Status Updated.vi>>
+|Test MESSAGES API.vi
+
+|<<MESSAGES.lvlib:Error Reported.vi>>
+|Test MESSAGES API.vi
+
+|<<MESSAGES.lvlib:Module Did Stop.vi>>
+|Test MESSAGES API.vi
+
+|<<MESSAGES.lvlib:Update Module Execution Status.vi>>
+|Test MESSAGES API.vi
+|===
+
+
+==== Products.lvlib
+
+Module type: Singleton
+
+THIS LIBRARY IS FOR PRODUCTS MODULE
+
+.Requests Link
+|===
+|Request Name|Callers
+
+|<<Products.lvlib:Show Panel.vi>>
+|Test Products API.vi
+
+|<<Products.lvlib:Hide Panel.vi>>
+|Test Products API.vi
+
+|<<Products.lvlib:Stop Module.vi>>
+|Products.lvlib:Handle Exit.vi +
+Tester UI.lvlib:Main.vi +
+Test Products API.vi
+
+|<<Products.lvlib:Get Module Execution Status.vi>>
+|Products.lvlib:Start Module.vi +
+Products.lvlib:Obtain Broadcast Events for Registration.vi
+
+|<<Products.lvlib:Show Diagram.vi>>
+|Test Products API.vi
+
+|<<Products.lvlib:GET PRODUCTS LIST.vi>>
+|COINS.lvlib:Main.vi +
+CONFIGURATION.lvlib:Main.vi +
+Products.lvlib:Main.vi +
+Test Products API.vi
+|===
+
+.Broadcast Registration
+|===
+|Broadcast Name|Listener
+
+|<<Products.lvlib:Module Did Init.vi>>
+|Test Products API.vi
+
+|<<Products.lvlib:Status Updated.vi>>
+|Test Products API.vi
+
+|<<Products.lvlib:Error Reported.vi>>
+|Test Products API.vi
+
+|<<Products.lvlib:Module Did Stop.vi>>
+|Test Products API.vi
+
+|<<Products.lvlib:Update Module Execution Status.vi>>
+|Test Products API.vi
+|===
+
+
+==== Tester UI.lvlib
+
+Module type: Singleton
+
+THIS LIBRARY IS FOR UI MODULE
+
+.Requests Link
+|===
+|Request Name|Callers
+
+|<<Tester UI.lvlib:Show Panel.vi>>
+|Test Tester UI API.vi
+
+|<<Tester UI.lvlib:Hide Panel.vi>>
+|Test Tester UI API.vi
+
+|<<Tester UI.lvlib:Stop Module.vi>>
+|Tester UI.lvlib:Handle Exit.vi +
+Test Tester UI API.vi
+
+|<<Tester UI.lvlib:Get Module Execution Status.vi>>
+|Tester UI.lvlib:Start Module.vi +
+Tester UI.lvlib:Obtain Broadcast Events for Registration.vi
+
+|<<Tester UI.lvlib:Show Diagram.vi>>
+|Test Tester UI API.vi
+|===
+
+.Broadcast Registration
+|===
+|Broadcast Name|Listener
+
+|<<Tester UI.lvlib:Module Did Init.vi>>
+|Test Tester UI API.vi
+
+|<<Tester UI.lvlib:Status Updated.vi>>
+|Test Tester UI API.vi
+
+|<<Tester UI.lvlib:Error Reported.vi>>
+|Test Tester UI API.vi
+
+|<<Tester UI.lvlib:Module Did Stop.vi>>
+|Test Tester UI API.vi
+
+|<<Tester UI.lvlib:Update Module Execution Status.vi>>
+|Test Tester UI API.vi
+|===
+
+
+=== Libraries
+
+Libraries description
+
+==== DB_VENDING MACHINE.lvlib
+
+THIS LIBRARY IS FOR THE MY SQL DB (PRODUCTS, MONEY)
+
+
+== Annexes
+
+=== Dqmh modules
+
+DQMH modules events documentation 
+
+==== COINS.lvlib
+
+===== COINS.lvlib:Show Panel.vi
+
+Event type: Request
+
+:imgpath: COINS.lvlib_Show Panel.vi.png
+image::{imgpath}[COINS.lvlib:Show Panel.vi]
+
+Send the Show Panel request to the Module's Main.vi.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== COINS.lvlib:Hide Panel.vi
+
+Event type: Request
+
+:imgpath: COINS.lvlib_Hide Panel.vi.png
+image::{imgpath}[COINS.lvlib:Hide Panel.vi]
+
+Send the Hide Panel request to the Module's Main.vi.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== COINS.lvlib:Stop Module.vi
+
+Event type: Request
+
+:imgpath: COINS.lvlib_Stop Module.vi.png
+image::{imgpath}[COINS.lvlib:Stop Module.vi]
+
+Send the Stop request to the Module's Main.vi.
+
+If <b>Wait for Module to Stop?</b> is TRUE, this VI will wait until the module main VI stops, and will timeout at the <b>Timeout to Wait for Stop</b> value. This value defaults to "-1", which means the VI will not timeout, and will always wait until the module main VI stops before completing execution.
+
+Note: The <b>Timeout to Wait for Stop</b> value is ignored if 'Wait for Module to Stop?' is set to FALSE.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== COINS.lvlib:Get Module Execution Status.vi
+
+Event type: Request
+
+:imgpath: COINS.lvlib_Get Module Execution Status.vi.png
+image::{imgpath}[COINS.lvlib:Get Module Execution Status.vi]
+
+Fire the Get Module Execution Status request.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== COINS.lvlib:Show Diagram.vi
+
+Event type: Request
+
+:imgpath: COINS.lvlib_Show Diagram.vi.png
+image::{imgpath}[COINS.lvlib:Show Diagram.vi]
+
+This VI tells the Module to show its block diagram to facilitate troubleshooting (add probes, breakpoints, highlight execution, etc).
+
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== COINS.lvlib:SET COINS.vi
+
+Event type: Request
+
+:imgpath: COINS.lvlib_SET COINS.vi.png
+image::{imgpath}[COINS.lvlib:SET COINS.vi]
+
+HERE WE CAN UPDATE OUR COINS FOR THE CUSTOMER
+Created using Delacor QMH Event Scripter 5.0.0.112.
+
+===== COINS.lvlib:UPDATE COIN.vi
+
+Event type: Request
+
+:imgpath: COINS.lvlib_UPDATE COIN.vi.png
+image::{imgpath}[COINS.lvlib:UPDATE COIN.vi]
+
+HERE WE ARE GOING TO UPDATE OUR BUTTONS
+Created using Delacor QMH Event Scripter 5.0.0.112.
+
+===== COINS.lvlib:UPDATE CREDIT.vi
+
+Event type: Request
+
+:imgpath: COINS.lvlib_UPDATE CREDIT.vi.png
+image::{imgpath}[COINS.lvlib:UPDATE CREDIT.vi]
+
+HERE WE CAN UPDATE OUR CREDIT AFTER PRESS COINS
+Created using Delacor QMH Event Scripter 5.0.0.112.
+
+===== COINS.lvlib:COMPARE CREDIT VS PRICE.vi
+
+Event type: Request
+
+:imgpath: COINS.lvlib_COMPARE CREDIT VS PRICE.vi.png
+image::{imgpath}[COINS.lvlib:COMPARE CREDIT VS PRICE.vi]
+
+HERE WE ARE GOING TO MAKE A COMPARISON OF OUR CREDIT AND THE PRICE OF THE PRODUCT SELECTED
+Created using Delacor QMH Event Scripter 5.0.0.112.
+
+===== COINS.lvlib:Module Did Init.vi
+
+Event type: Broadcast
+
+:imgpath: COINS.lvlib_Module Did Init.vi.png
+image::{imgpath}[COINS.lvlib:Module Did Init.vi]
+
+Send the Module Did Init event to any VI registered to listen to this module's broadcast events.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== COINS.lvlib:Status Updated.vi
+
+Event type: Broadcast
+
+:imgpath: COINS.lvlib_Status Updated.vi.png
+image::{imgpath}[COINS.lvlib:Status Updated.vi]
+
+Send the Status Updated event to any VI registered to listen to events from the owning module.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== COINS.lvlib:Error Reported.vi
+
+Event type: Broadcast
+
+:imgpath: COINS.lvlib_Error Reported.vi.png
+image::{imgpath}[COINS.lvlib:Error Reported.vi]
+
+Send the Error Reported event to any VI registered to listen to events from the owning module.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== COINS.lvlib:Module Did Stop.vi
+
+Event type: Broadcast
+
+:imgpath: COINS.lvlib_Module Did Stop.vi.png
+image::{imgpath}[COINS.lvlib:Module Did Stop.vi]
+
+Send the Module Did Stop event to any VI registered to listen to this module's broadcast events.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== COINS.lvlib:Update Module Execution Status.vi
+
+Event type: Broadcast
+
+:imgpath: COINS.lvlib_Update Module Execution Status.vi.png
+image::{imgpath}[COINS.lvlib:Update Module Execution Status.vi]
+
+Broadcast event to specify whether or not the module is running.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+==== CONFIGURATION.lvlib
+
+===== CONFIGURATION.lvlib:Show Panel.vi
+
+Event type: Request
+
+:imgpath: CONFIGURATION.lvlib_Show Panel.vi.png
+image::{imgpath}[CONFIGURATION.lvlib:Show Panel.vi]
+
+Send the Show Panel request to the Module's Main.vi.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== CONFIGURATION.lvlib:Hide Panel.vi
+
+Event type: Request
+
+:imgpath: CONFIGURATION.lvlib_Hide Panel.vi.png
+image::{imgpath}[CONFIGURATION.lvlib:Hide Panel.vi]
+
+Send the Hide Panel request to the Module's Main.vi.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== CONFIGURATION.lvlib:Stop Module.vi
+
+Event type: Request
+
+:imgpath: CONFIGURATION.lvlib_Stop Module.vi.png
+image::{imgpath}[CONFIGURATION.lvlib:Stop Module.vi]
+
+Send the Stop request to the Module's Main.vi.
+
+If <b>Wait for Module to Stop?</b> is TRUE, this VI will wait until the module main VI stops, and will timeout at the <b>Timeout to Wait for Stop</b> value. This value defaults to "-1", which means the VI will not timeout, and will always wait until the module main VI stops before completing execution.
+
+Note: The <b>Timeout to Wait for Stop</b> value is ignored if 'Wait for Module to Stop?' is set to FALSE.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== CONFIGURATION.lvlib:Get Module Execution Status.vi
+
+Event type: Request
+
+:imgpath: CONFIGURATION.lvlib_Get Module Execution Status.vi.png
+image::{imgpath}[CONFIGURATION.lvlib:Get Module Execution Status.vi]
+
+Fire the Get Module Execution Status request.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== CONFIGURATION.lvlib:Show Diagram.vi
+
+Event type: Request
+
+:imgpath: CONFIGURATION.lvlib_Show Diagram.vi.png
+image::{imgpath}[CONFIGURATION.lvlib:Show Diagram.vi]
+
+This VI tells the Module to show its block diagram to facilitate troubleshooting (add probes, breakpoints, highlight execution, etc).
+
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== CONFIGURATION.lvlib:SET CONFIGURATIO.vi
+
+Event type: Request
+
+:imgpath: CONFIGURATION.lvlib_SET CONFIGURATIO.vi.png
+image::{imgpath}[CONFIGURATION.lvlib:SET CONFIGURATIO.vi]
+
+HERE WE CAN SET OUR PRODUCT AND MONEY CONFIGURATION
+Created using Delacor QMH Event Scripter 5.0.0.112.
+
+===== CONFIGURATION.lvlib:UPDATE DB TO MONEY LIST.vi
+
+Event type: Request
+
+:imgpath: CONFIGURATION.lvlib_UPDATE DB TO MONEY LIST.vi.png
+image::{imgpath}[CONFIGURATION.lvlib:UPDATE DB TO MONEY LIST.vi]
+
+HERE WE CAN UPDATE FROM DB OUR MONEY IN A LIST
+Created using Delacor QMH Event Scripter 5.0.0.112.
+
+===== CONFIGURATION.lvlib:SAVE IN DB.vi
+
+Event type: Request
+
+:imgpath: CONFIGURATION.lvlib_SAVE IN DB.vi.png
+image::{imgpath}[CONFIGURATION.lvlib:SAVE IN DB.vi]
+
+HERE WE CAN SAVE NEW COINS AND VALUES 
+Created using Delacor QMH Event Scripter 5.0.0.112.
+
+===== CONFIGURATION.lvlib:SAVE PRODUCT IN DATABASE.vi
+
+Event type: Request
+
+:imgpath: CONFIGURATION.lvlib_SAVE PRODUCT IN DATABASE.vi.png
+image::{imgpath}[CONFIGURATION.lvlib:SAVE PRODUCT IN DATABASE.vi]
+
+HERE WE CAN UPDATE OUR DB OF PRODUCTS
+Created using Delacor QMH Event Scripter 5.0.0.112.
+
+===== CONFIGURATION.lvlib:UPDATE DB TO PRODUCT LIST.vi
+
+Event type: Request
+
+:imgpath: CONFIGURATION.lvlib_UPDATE DB TO PRODUCT LIST.vi.png
+image::{imgpath}[CONFIGURATION.lvlib:UPDATE DB TO PRODUCT LIST.vi]
+
+HERE WE CAN SET DB DATA IN OUR PRODUCT LIST
+Created using Delacor QMH Event Scripter 5.0.0.112.
+
+===== CONFIGURATION.lvlib:Module Did Init.vi
+
+Event type: Broadcast
+
+:imgpath: CONFIGURATION.lvlib_Module Did Init.vi.png
+image::{imgpath}[CONFIGURATION.lvlib:Module Did Init.vi]
+
+Send the Module Did Init event to any VI registered to listen to this module's broadcast events.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== CONFIGURATION.lvlib:Status Updated.vi
+
+Event type: Broadcast
+
+:imgpath: CONFIGURATION.lvlib_Status Updated.vi.png
+image::{imgpath}[CONFIGURATION.lvlib:Status Updated.vi]
+
+Send the Status Updated event to any VI registered to listen to events from the owning module.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== CONFIGURATION.lvlib:Error Reported.vi
+
+Event type: Broadcast
+
+:imgpath: CONFIGURATION.lvlib_Error Reported.vi.png
+image::{imgpath}[CONFIGURATION.lvlib:Error Reported.vi]
+
+Send the Error Reported event to any VI registered to listen to events from the owning module.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== CONFIGURATION.lvlib:Module Did Stop.vi
+
+Event type: Broadcast
+
+:imgpath: CONFIGURATION.lvlib_Module Did Stop.vi.png
+image::{imgpath}[CONFIGURATION.lvlib:Module Did Stop.vi]
+
+Send the Module Did Stop event to any VI registered to listen to this module's broadcast events.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== CONFIGURATION.lvlib:Update Module Execution Status.vi
+
+Event type: Broadcast
+
+:imgpath: CONFIGURATION.lvlib_Update Module Execution Status.vi.png
+image::{imgpath}[CONFIGURATION.lvlib:Update Module Execution Status.vi]
+
+Broadcast event to specify whether or not the module is running.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+==== MESSAGES.lvlib
+
+===== MESSAGES.lvlib:Show Panel.vi
+
+Event type: Request
+
+:imgpath: MESSAGES.lvlib_Show Panel.vi.png
+image::{imgpath}[MESSAGES.lvlib:Show Panel.vi]
+
+Send the Show Panel request to the Module's Main.vi.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== MESSAGES.lvlib:Hide Panel.vi
+
+Event type: Request
+
+:imgpath: MESSAGES.lvlib_Hide Panel.vi.png
+image::{imgpath}[MESSAGES.lvlib:Hide Panel.vi]
+
+Send the Hide Panel request to the Module's Main.vi.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== MESSAGES.lvlib:Stop Module.vi
+
+Event type: Request
+
+:imgpath: MESSAGES.lvlib_Stop Module.vi.png
+image::{imgpath}[MESSAGES.lvlib:Stop Module.vi]
+
+Send the Stop request to the Module's Main.vi.
+
+If <b>Wait for Module to Stop?</b> is TRUE, this VI will wait until the module main VI stops, and will timeout at the <b>Timeout to Wait for Stop</b> value. This value defaults to "-1", which means the VI will not timeout, and will always wait until the module main VI stops before completing execution.
+
+Note: The <b>Timeout to Wait for Stop</b> value is ignored if 'Wait for Module to Stop?' is set to FALSE.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== MESSAGES.lvlib:Get Module Execution Status.vi
+
+Event type: Request
+
+:imgpath: MESSAGES.lvlib_Get Module Execution Status.vi.png
+image::{imgpath}[MESSAGES.lvlib:Get Module Execution Status.vi]
+
+Fire the Get Module Execution Status request.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== MESSAGES.lvlib:Show Diagram.vi
+
+Event type: Request
+
+:imgpath: MESSAGES.lvlib_Show Diagram.vi.png
+image::{imgpath}[MESSAGES.lvlib:Show Diagram.vi]
+
+This VI tells the Module to show its block diagram to facilitate troubleshooting (add probes, breakpoints, highlight execution, etc).
+
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== MESSAGES.lvlib:SET MESSAGE.vi
+
+Event type: Request
+
+:imgpath: MESSAGES.lvlib_SET MESSAGE.vi.png
+image::{imgpath}[MESSAGES.lvlib:SET MESSAGE.vi]
+
+THIS EVENT LET US SET A MESSAGE TO OUR MESSAGE MODULE
+Created using Delacor QMH Event Scripter 5.0.0.112.
+
+===== MESSAGES.lvlib:Module Did Init.vi
+
+Event type: Broadcast
+
+:imgpath: MESSAGES.lvlib_Module Did Init.vi.png
+image::{imgpath}[MESSAGES.lvlib:Module Did Init.vi]
+
+Send the Module Did Init event to any VI registered to listen to this module's broadcast events.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== MESSAGES.lvlib:Status Updated.vi
+
+Event type: Broadcast
+
+:imgpath: MESSAGES.lvlib_Status Updated.vi.png
+image::{imgpath}[MESSAGES.lvlib:Status Updated.vi]
+
+Send the Status Updated event to any VI registered to listen to events from the owning module.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== MESSAGES.lvlib:Error Reported.vi
+
+Event type: Broadcast
+
+:imgpath: MESSAGES.lvlib_Error Reported.vi.png
+image::{imgpath}[MESSAGES.lvlib:Error Reported.vi]
+
+Send the Error Reported event to any VI registered to listen to events from the owning module.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== MESSAGES.lvlib:Module Did Stop.vi
+
+Event type: Broadcast
+
+:imgpath: MESSAGES.lvlib_Module Did Stop.vi.png
+image::{imgpath}[MESSAGES.lvlib:Module Did Stop.vi]
+
+Send the Module Did Stop event to any VI registered to listen to this module's broadcast events.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== MESSAGES.lvlib:Update Module Execution Status.vi
+
+Event type: Broadcast
+
+:imgpath: MESSAGES.lvlib_Update Module Execution Status.vi.png
+image::{imgpath}[MESSAGES.lvlib:Update Module Execution Status.vi]
+
+Broadcast event to specify whether or not the module is running.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+==== Products.lvlib
+
+===== Products.lvlib:Show Panel.vi
+
+Event type: Request
+
+:imgpath: Products.lvlib_Show Panel.vi.png
+image::{imgpath}[Products.lvlib:Show Panel.vi]
+
+Send the Show Panel request to the Module's Main.vi.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== Products.lvlib:Hide Panel.vi
+
+Event type: Request
+
+:imgpath: Products.lvlib_Hide Panel.vi.png
+image::{imgpath}[Products.lvlib:Hide Panel.vi]
+
+Send the Hide Panel request to the Module's Main.vi.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== Products.lvlib:Stop Module.vi
+
+Event type: Request
+
+:imgpath: Products.lvlib_Stop Module.vi.png
+image::{imgpath}[Products.lvlib:Stop Module.vi]
+
+Send the Stop request to the Module's Main.vi.
+
+If <b>Wait for Module to Stop?</b> is TRUE, this VI will wait until the module main VI stops, and will timeout at the <b>Timeout to Wait for Stop</b> value. This value defaults to "-1", which means the VI will not timeout, and will always wait until the module main VI stops before completing execution.
+
+Note: The <b>Timeout to Wait for Stop</b> value is ignored if 'Wait for Module to Stop?' is set to FALSE.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== Products.lvlib:Get Module Execution Status.vi
+
+Event type: Request
+
+:imgpath: Products.lvlib_Get Module Execution Status.vi.png
+image::{imgpath}[Products.lvlib:Get Module Execution Status.vi]
+
+Fire the Get Module Execution Status request.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== Products.lvlib:Show Diagram.vi
+
+Event type: Request
+
+:imgpath: Products.lvlib_Show Diagram.vi.png
+image::{imgpath}[Products.lvlib:Show Diagram.vi]
+
+This VI tells the Module to show its block diagram to facilitate troubleshooting (add probes, breakpoints, highlight execution, etc).
+
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== Products.lvlib:GET PRODUCTS LIST.vi
+
+Event type: Request
+
+:imgpath: Products.lvlib_GET PRODUCTS LIST.vi.png
+image::{imgpath}[Products.lvlib:GET PRODUCTS LIST.vi]
+
+HERE WE CAN GET PRODUCTS SETED UP IN CONFIGURATIONS
+Created using Delacor QMH Event Scripter 5.0.0.112.
+
+===== Products.lvlib:Module Did Init.vi
+
+Event type: Broadcast
+
+:imgpath: Products.lvlib_Module Did Init.vi.png
+image::{imgpath}[Products.lvlib:Module Did Init.vi]
+
+Send the Module Did Init event to any VI registered to listen to this module's broadcast events.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== Products.lvlib:Status Updated.vi
+
+Event type: Broadcast
+
+:imgpath: Products.lvlib_Status Updated.vi.png
+image::{imgpath}[Products.lvlib:Status Updated.vi]
+
+Send the Status Updated event to any VI registered to listen to events from the owning module.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== Products.lvlib:Error Reported.vi
+
+Event type: Broadcast
+
+:imgpath: Products.lvlib_Error Reported.vi.png
+image::{imgpath}[Products.lvlib:Error Reported.vi]
+
+Send the Error Reported event to any VI registered to listen to events from the owning module.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== Products.lvlib:Module Did Stop.vi
+
+Event type: Broadcast
+
+:imgpath: Products.lvlib_Module Did Stop.vi.png
+image::{imgpath}[Products.lvlib:Module Did Stop.vi]
+
+Send the Module Did Stop event to any VI registered to listen to this module's broadcast events.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== Products.lvlib:Update Module Execution Status.vi
+
+Event type: Broadcast
+
+:imgpath: Products.lvlib_Update Module Execution Status.vi.png
+image::{imgpath}[Products.lvlib:Update Module Execution Status.vi]
+
+Broadcast event to specify whether or not the module is running.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+==== Tester UI.lvlib
+
+===== Tester UI.lvlib:Show Panel.vi
+
+Event type: Request
+
+:imgpath: Tester UI.lvlib_Show Panel.vi.png
+image::{imgpath}[Tester UI.lvlib:Show Panel.vi]
+
+Send the Show Panel request to the Module's Main.vi.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== Tester UI.lvlib:Hide Panel.vi
+
+Event type: Request
+
+:imgpath: Tester UI.lvlib_Hide Panel.vi.png
+image::{imgpath}[Tester UI.lvlib:Hide Panel.vi]
+
+Send the Hide Panel request to the Module's Main.vi.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== Tester UI.lvlib:Stop Module.vi
+
+Event type: Request
+
+:imgpath: Tester UI.lvlib_Stop Module.vi.png
+image::{imgpath}[Tester UI.lvlib:Stop Module.vi]
+
+Send the Stop request to the Module's Main.vi.
+
+If <b>Wait for Module to Stop?</b> is TRUE, this VI will wait until the module main VI stops, and will timeout at the <b>Timeout to Wait for Stop</b> value. This value defaults to "-1", which means the VI will not timeout, and will always wait until the module main VI stops before completing execution.
+
+Note: The <b>Timeout to Wait for Stop</b> value is ignored if 'Wait for Module to Stop?' is set to FALSE.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== Tester UI.lvlib:Get Module Execution Status.vi
+
+Event type: Request
+
+:imgpath: Tester UI.lvlib_Get Module Execution Status.vi.png
+image::{imgpath}[Tester UI.lvlib:Get Module Execution Status.vi]
+
+Fire the Get Module Execution Status request.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== Tester UI.lvlib:Show Diagram.vi
+
+Event type: Request
+
+:imgpath: Tester UI.lvlib_Show Diagram.vi.png
+image::{imgpath}[Tester UI.lvlib:Show Diagram.vi]
+
+This VI tells the Module to show its block diagram to facilitate troubleshooting (add probes, breakpoints, highlight execution, etc).
+
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== Tester UI.lvlib:Module Did Init.vi
+
+Event type: Broadcast
+
+:imgpath: Tester UI.lvlib_Module Did Init.vi.png
+image::{imgpath}[Tester UI.lvlib:Module Did Init.vi]
+
+Send the Module Did Init event to any VI registered to listen to this module's broadcast events.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== Tester UI.lvlib:Status Updated.vi
+
+Event type: Broadcast
+
+:imgpath: Tester UI.lvlib_Status Updated.vi.png
+image::{imgpath}[Tester UI.lvlib:Status Updated.vi]
+
+Send the Status Updated event to any VI registered to listen to events from the owning module.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== Tester UI.lvlib:Error Reported.vi
+
+Event type: Broadcast
+
+:imgpath: Tester UI.lvlib_Error Reported.vi.png
+image::{imgpath}[Tester UI.lvlib:Error Reported.vi]
+
+Send the Error Reported event to any VI registered to listen to events from the owning module.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== Tester UI.lvlib:Module Did Stop.vi
+
+Event type: Broadcast
+
+:imgpath: Tester UI.lvlib_Module Did Stop.vi.png
+image::{imgpath}[Tester UI.lvlib:Module Did Stop.vi]
+
+Send the Module Did Stop event to any VI registered to listen to this module's broadcast events.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+===== Tester UI.lvlib:Update Module Execution Status.vi
+
+Event type: Broadcast
+
+:imgpath: Tester UI.lvlib_Update Module Execution Status.vi.png
+image::{imgpath}[Tester UI.lvlib:Update Module Execution Status.vi]
+
+Broadcast event to specify whether or not the module is running.
+Based on Delacor QMH Project Template 5.0.0.82.
+
+=== Libraries
+
+Libraries public VIs documentation
+
+==== DB_VENDING MACHINE.lvlib
+
+===== DB_VENDING MACHINE.lvlib:DB_CONECTION_PATH.vi
+
+:imgpath: DB_VENDING MACHINE.lvlib_DB_CONECTION_PATH.vi.png
+image::{imgpath}[DB_VENDING MACHINE.lvlib:DB_CONECTION_PATH.vi]
+
+Aquí se genera la ruta en la que se encuentra nuestro archivo
+
+===== DB_VENDING MACHINE.lvlib:DB_PRINCIPAL.vi
+
+:imgpath: DB_VENDING MACHINE.lvlib_DB_PRINCIPAL.vi.png
+image::{imgpath}[DB_VENDING MACHINE.lvlib:DB_PRINCIPAL.vi]
+
+Aquí se realiza la conexión a nuestra base de datos
+
+===== DB_VENDING MACHINE.lvlib:REVISA_ARCHIVO.vi
+
+:imgpath: DB_VENDING MACHINE.lvlib_REVISA_ARCHIVO.vi.png
+image::{imgpath}[DB_VENDING MACHINE.lvlib:REVISA_ARCHIVO.vi]
+
+No description found (add content in VI description)
+
+===== DB_VENDING MACHINE.lvlib:TEST_CONECTION.vi
+
+:imgpath: DB_VENDING MACHINE.lvlib_TEST_CONECTION.vi.png
+image::{imgpath}[DB_VENDING MACHINE.lvlib:TEST_CONECTION.vi]
+
+No description found (add content in VI description)
+
+===== DB_VENDING MACHINE.lvlib:CREATE_VENDING MACHINE.vi
+
+:imgpath: DB_VENDING MACHINE.lvlib_CREATE_VENDING MACHINE.vi.png
+image::{imgpath}[DB_VENDING MACHINE.lvlib:CREATE_VENDING MACHINE.vi]
+
+En este VI se realiza el proceso para la creación de un usuario,
+
+===== DB_VENDING MACHINE.lvlib:DELETE_VENDING MACHINE.vi
+
+:imgpath: DB_VENDING MACHINE.lvlib_DELETE_VENDING MACHINE.vi.png
+image::{imgpath}[DB_VENDING MACHINE.lvlib:DELETE_VENDING MACHINE.vi]
+
+No description found (add content in VI description)
+
+===== DB_VENDING MACHINE.lvlib:SEARCH_VENDING MACHINE.vi
+
+:imgpath: DB_VENDING MACHINE.lvlib_SEARCH_VENDING MACHINE.vi.png
+image::{imgpath}[DB_VENDING MACHINE.lvlib:SEARCH_VENDING MACHINE.vi]
+
+No description found (add content in VI description)
+
+===== DB_VENDING MACHINE.lvlib:UPDATE_VENDING MACHINE.vi
+
+:imgpath: DB_VENDING MACHINE.lvlib_UPDATE_VENDING MACHINE.vi.png
+image::{imgpath}[DB_VENDING MACHINE.lvlib:UPDATE_VENDING MACHINE.vi]
+
+No description found (add content in VI description)
+
+===== DB_VENDING MACHINE.lvlib:VALIDATE_VENDING MACHINE.vi
+
+:imgpath: DB_VENDING MACHINE.lvlib_VALIDATE_VENDING MACHINE.vi.png
+image::{imgpath}[DB_VENDING MACHINE.lvlib:VALIDATE_VENDING MACHINE.vi]
+
+Aquí realizamos la validación de los ususarios
