@@ -21,6 +21,7 @@
 				<Item Name="SET COINS Argument--cluster.ctl" Type="VI" URL="../SET COINS Argument--cluster.ctl"/>
 				<Item Name="UPDATE COIN Argument--cluster.ctl" Type="VI" URL="../UPDATE COIN Argument--cluster.ctl"/>
 				<Item Name="UPDATE CREDIT Argument--cluster.ctl" Type="VI" URL="../UPDATE CREDIT Argument--cluster.ctl"/>
+				<Item Name="COMPARE CREDIT VS PRICE Argument--cluster.ctl" Type="VI" URL="../COMPARE CREDIT VS PRICE Argument--cluster.ctl"/>
 			</Item>
 			<Item Name="Broadcast" Type="Folder">
 				<Item Name="Did Init Argument--cluster.ctl" Type="VI" URL="../Did Init Argument--cluster.ctl"/>
@@ -37,6 +38,7 @@
 			<Item Name="SET COINS.vi" Type="VI" URL="../SET COINS.vi"/>
 			<Item Name="UPDATE COIN.vi" Type="VI" URL="../UPDATE COIN.vi"/>
 			<Item Name="UPDATE CREDIT.vi" Type="VI" URL="../UPDATE CREDIT.vi"/>
+			<Item Name="COMPARE CREDIT VS PRICE.vi" Type="VI" URL="../COMPARE CREDIT VS PRICE.vi"/>
 		</Item>
 		<Item Name="Start Module.vi" Type="VI" URL="../Start Module.vi"/>
 		<Item Name="Synchronize Module Events.vi" Type="VI" URL="../Synchronize Module Events.vi"/>
