@@ -1,5 +1,7 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Library LVVersion="19008000">
+	<Property Name="NI.Lib.Description" Type="Str">THIS LIBRARY IS FOR MESSAGES MODULE</Property>
+	<Property Name="NI.Lib.HelpPath" Type="Str"></Property>
 	<Property Name="NI.Lib.Icon" Type="Bin">'1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!*(!!!*Q(C=\&gt;5^&lt;NN!%)&lt;B,Y',F.%.$*V!Q.QAU"6U!$6T"&lt;5K#=-O8![1)ECJ,G8!+QR]!VW"A%^!PVS.&lt;4K&amp;V32"%'CJJ;6P`RYN+6JKZ:.UJ@&amp;=7&lt;V&lt;7POJNL\TUWP\W&amp;\6]X2[UXY[RFH`V6D4TO;P&amp;6@0K`X;0LYRT-;`[T^4&gt;#G8]H_8`&gt;E@Q2``(8T1^##C*D7I4D6.SYZ*HO2*HO2*HO2"(O2"(O2"(O2/\O2/\O2/\O2'&lt;O2'&lt;O2'&lt;O4N)"?ZS%5/+6E]73C:.*EA[1R&amp;S3HR**\%EXDYK-34?"*0YEE]&gt;&amp;(C34S**`%E(I9J]33?R*.Y%A^4.5GWARR0YG&amp;[":\!%XA#4_"B317?!"!M&amp;EQ=4!*$170Q*P!%HM$$7Q7?Q".Y!E`AI6G"*`!%HM!4?"D3&gt;C7;:DL)]4#.()`D=4S/R`%QN2S0YX%]DM@RM*Q=D_.R%-[#TO11Z!RS/DA@()`DY9]=D_.R0)\(]&gt;$5LJ#XH:EUUU'/R`!9(M.D?!Q05]DQ'"\$9XA-$^0+]"A?QW.Y$!^,S@!9(M.D1)R&amp;76\':-:!IZ-2'"Z?\7[R&gt;J7C3;Q&gt;5NW]KJN3&gt;&lt;/J&lt;C,6T;'[[+K,K&lt;J)KMV8&lt;;JKMV3&lt;I0JS+L1+IVJ%.8DKK)(TE&gt;J4$^3/OK.OK'PKELK9BP\GDM-Q[(A]KO^\(1Y(&gt;6WHX7[HT7;D^8KNZ8+JR7,R]BCYZHBZ)*S?3XP?&gt;T]@NH@@0W^P@NT?&gt;^__0(&lt;^V`MJ`QP`H`_":[-_;LY'?`1%V&amp;&amp;D/A!!!!!</Property>
 	<Property Name="NI.Lib.SourceVersion" Type="Int">419463168</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>

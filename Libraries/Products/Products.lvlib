@@ -1,5 +1,7 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Library LVVersion="19008000">
+	<Property Name="NI.Lib.Description" Type="Str">THIS LIBRARY IS FOR PRODUCTS MODULE</Property>
+	<Property Name="NI.Lib.HelpPath" Type="Str"></Property>
 	<Property Name="NI.Lib.Icon" Type="Bin">'1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!)S!!!*Q(C=\&gt;5^=B."%-8R"U6!OE8IB&amp;)';5@EOI+OU&amp;&gt;1[F!J2&gt;1JY;;/+&amp;XB85&amp;8U"8E`YQ&lt;YQ#M"#C+]IZ(7LXZ_GFWN:&lt;G]6:[I]OVY_&lt;:A`&lt;2:8&lt;L^UO@8,LBZ_7B`^0RPWS`_4ZH^`MRI"&gt;_XH?F`=KBF_0F_,_0W[M`AD`_/XCF]3#CGFL5J)&lt;'MB?4G^TE*D?ZS9O]S)O]S)O]S*-]S:-]S:-]S9-]S)-]S)-]S'=B&amp;\H)21\*,'Y7-J/;#5RH+$)PRG-]RG-]@*4R')`R')`RU%8'9TT'9TT'QT!:D`%9D`%9$V..C7=BRW-]4+`#5XA+4_%J0#SJQF-!CM7+C9N*9+BI,%Y+4_%J0*SK]"3?QF.Y#A`.+DS&amp;J`!5HM,$E,EL.47DE/.B'C7?R*.Y%E`C97IFHM34?"*0YG%Z*:\%ES#3":0*)3A:F(2)0C3?R-/&lt;%E`C34S**`(1.+^1TJU:GF()]13?Q".Y!E`A91I&amp;HM!4?!*0Y'&amp;;":\!%XA#4_"B+17?Q".Y!ECQ+-MLG#Q9'(1+AM$$X\R&lt;9F[FGJ+92?K&lt;6XV4KG]W^5WEPDH5&amp;VV^-&gt;583&lt;XZ[EV6&lt;Z:[%^2@4IV79^3,K!?0DDLT?K)?K3PV1.V4&gt;^1N&gt;5.&gt;RN$@X0&amp;]0ONU/OFY0'J&gt;6RU/"_XX?_VW/WWX7WUW'SX,]PA9?%^Z@#!]0*&gt;O/&lt;^\^_%&lt;QZ?\D_PS^=OHTS-&lt;^3`]@`Y(HIV[L;&gt;LM%@XM:./KQ!!!!!</Property>
 	<Property Name="NI.Lib.SourceVersion" Type="Int">419463168</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>

@@ -1,5 +1,7 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Library LVVersion="19008000">
+	<Property Name="NI.Lib.Description" Type="Str">THIS LIBRARY IS FOR COINS MODULE</Property>
+	<Property Name="NI.Lib.HelpPath" Type="Str"></Property>
 	<Property Name="NI.Lib.Icon" Type="Bin">'1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!*&amp;!!!*Q(C=\&gt;5^4C."%)&lt;BDR5"GMSBMZ5F4F!H7-H"IIU&gt;\!5KY!*/14DQ&amp;?I!*,[#)`+[AK`A+]S_X:3-(9!41'B&amp;$TW-P`Z\["E05C^8UK8'=W6YMV2\`^6/Y^"0QXD=-,QUD#XJV].J_[(4_$T0/,QW`K8\[_O0J_0@]J]J_C\@Z@]O&gt;W?`""`_0&lt;B1?R&amp;2ERJ5JZL;MG/3*XG3*XG3*XG1"XG1"XG1"\G4/\G4/\G4/\G2'\G2'\G2'XE`S%5O=J&amp;$3B:0&amp;EIG43:)/E.2=EI]C3@R*"Y_+P%EHM34?")08:2Y%E`C34S*BW&amp;+0)EH]33?R-.58:,^)-?4?*B?A3@Q"*\!%XB95I%H!!3,"2-(E]"1U"B="*\!%XCY6/!*0)%H]!1?GB6Y!E`A#4S"BS&amp;^6[*LWE'/BWHE?"S0YX%]DI?JZ8A=D_.R0)[(Z?2Y()_$=":U*I=A:Z$4Q@HA?"Q0P_2Y()`D=4S/B[:_B\TP4./UARS0Y4%]BM@Q'"[GE/%R0)&lt;(]"A?JJ8B-4S'R`!9(J;3Y4%]BM?!')OSP)T*D)&amp;'*S-Q00TUJ]8[89IOM8Z)^@#K(EL6Q[:[C&amp;10B_KGKW[G[C;J.F_VK;L.5GW#[I^4I659V3+KQ;WD^JRXV#VV1VV4F^1&amp;&gt;5[&gt;53&gt;N[$NXX/`XWOVWWG[XWGQW7K`87C[87CQ7GM`HGMVGGEQGB^@!4Y\$#_(ZP84(^=0UZGHV?(OROPZ\PXL]`?NB_O?_Z:`Q``E,P"PV1]&gt;LM%@`!'-=1$]!!!!!</Property>
 	<Property Name="NI.Lib.SourceVersion" Type="Int">419463168</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
